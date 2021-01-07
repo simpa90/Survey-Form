@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Travel Agency Survey Form">
+    <meta name="keywords" content="Travel agency,travels">
+    <meta name="author" content="Simone">
+    <title>Travel Agency Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Travel Agency Survey Form</h1>
+            <p id="description">Thanks for taking your time for helping us to improve our customer experience</p>
+        </header>
+    
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" class="input-control" placeholder="Enter your name" required>
+            </div>       
+                
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" class="input-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="number-label" for="age">Age</label>
+                <input type="number" id="number" name="age" min="16" max="99" class="input-control" placeholder="16-99" required>
+            </div>
+
+            <div class="form-group">
+                <p>Which option is the most suitable to describe your role?</p>
+                <select name="job-type" id="dropdown" class="input-control" required>
+                    <option value selected disabled>Select current role</option>
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="student">Student</option>
+                    <option value="other">Other</option>
+                    <option value="prefer do not say">Prefer do not say</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend Travel Agency to a friend?</p>
+                <label><input type="radio" name="customer-recommend" value="sure" class="input-radio" checked>Sure</label>
+                <label><input type="radio" name="customer-recommend" value="maybe" class="input-radio">Maybe</label>
+                <label><input type="radio" name="customer-recommend" value="never" class="input-radio">Never</label>
+            </div>
+
+            <div class="form-group">
+                <p>How often do you book your travels with us?</p>
+                <select name="frequency" id="frequency" class="input-control" required>
+                    <option value selected disabled>Select frequency</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="this is my first time">This is my first time</option>
+                    <option value="often">Often</option>
+                    <option value="I usually prefer another travel agency">I usually prefer another travel agency</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which kind of travellers are you? 
+                <span style="font-style:italic;">(Choose the most suitable for you)</span></p>
+                 <label><input type="checkbox" name="preference" value="railway" class="input-checkbox">Railway</label>
+                 <label><input type="checkbox" name="preference" value="flight" class="input-checkbox">Flight</label>
+                 <label><input type="checkbox" name="preference" value="cruise" class="input-checkbox">Cruise</label>
+                 <label><input type="checkbox" name="preference" value="motorbike" class="input-checkbox">Motorbike</label>
+                 <label><input type="checkbox" name="preference" value="bike" class="input-checkbox">Bike</label>
+            </div>  
+            
+            <div class="form-group">
+                <p>Other suggestions</p>
+                 <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>        
+</body>
+</html>
